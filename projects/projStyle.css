@@ -3,35 +3,81 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #F6F6F6;
-  }
+}
+
+header {
+    background-color: #2F2F2F;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Estilo de la navegación */
+nav ul {
+  display: flex;
+  list-style-type: none;
+} 
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+} 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo del main */
+main {
+  margin: 20px auto;
+  margin-bottom: 60px; /* Ajusta la altura del footer */
+  margin-top: 100px; /* Ajusta a la altura del header */
+  max-width: 800px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
   
-  /* Ajusta el ancho máximo de la sección del proyecto a 800 píxeles */
-  section {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+/* Ajusta el ancho máximo de la sección del proyecto a 800 píxeles */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+}
   
-  /* Ajusta el tamaño de la imagen del proyecto */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Cambia el estilo de la lista de características */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Cambia el color y tamaño del enlace "Ver código fuente" */
-  a {
-    color: #333;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  
-  /* Cambia el estilo del enlace cuando se coloca el cursor encima */
-  a:hover {
-    text-decoration: underline;
-  }
+/* Ajusta el tamaño de la imagen del proyecto */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #2F2F2F;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer p {
+  margin: 0;
+}
