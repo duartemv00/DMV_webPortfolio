@@ -12,49 +12,6 @@
     var nav = document.querySelector('nav');
     nav.classList.toggle('show');
   }
-
-  // Función para validar el formulario de contacto
-  function validateForm() {
-    var name = document.getElementById('name').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var message = document.getElementById('message').value.trim();
-    var error = false;
-
-    if (name === '') {
-      showError('name', 'Por favor ingrese su nombre');
-      error = true;
-    }
-
-    if (email === '') {
-      showError('email', 'Por favor ingrese su correo electrónico');
-      error = true;
-    } else if (!isValidEmail(email)) {
-      showError('email', 'Por favor ingrese un correo electrónico válido');
-      error = true;
-    }
-
-    if (message === '') {
-      showError('message', 'Por favor ingrese su mensaje');
-      error = true;
-    }
-
-    if (!error) {
-      alert('¡Gracias por su mensaje! Nos pondremos en contacto con usted pronto.');
-    }
-  }
-
-  // Función para mostrar errores en el formulario de contacto
-  function showError(field, message) {
-    var errorField = document.getElementById(field + '-error');
-    errorField.innerHTML = message;
-    errorField.style.display = 'block';
-  }
-
-  // Función para validar una dirección de correo electrónico
-  function isValidEmail(email) {
-    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
-  }
 </script>
 <body>
   <header>
