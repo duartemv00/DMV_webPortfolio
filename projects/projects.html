@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DuarteMV</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<script>
+  // Función para mostrar/ocultar el menú de navegación en pantallas pequeñas
+  function toggleNav() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+  }
+
+  // Función para validar el formulario de contacto
+  function validateForm() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var error = false;
+
+    if (name === '') {
+      showError('name', 'Por favor ingrese su nombre');
+      error = true;
+    }
+
+    if (email === '') {
+      showError('email', 'Por favor ingrese su correo electrónico');
+      error = true;
+    } else if (!isValidEmail(email)) {
+      showError('email', 'Por favor ingrese un correo electrónico válido');
+      error = true;
+    }
+
+    if (message === '') {
+      showError('message', 'Por favor ingrese su mensaje');
+      error = true;
+    }
+
+    if (!error) {
+      alert('¡Gracias por su mensaje! Nos pondremos en contacto con usted pronto.');
+    }
+  }
+
+  // Función para mostrar errores en el formulario de contacto
+  function showError(field, message) {
+    var errorField = document.getElementById(field + '-error');
+    errorField.innerHTML = message;
+    errorField.style.display = 'block';
+  }
+
+  // Función para validar una dirección de correo electrónico
+  function isValidEmail(email) {
+    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+</script>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="main.html">Inicio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="portfolios.html">Portfolios</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>DuarteMV</h1>
+
+    <section id="projects">
+      <h2>👷Proyectos</h2>
+      <h3>🕹️Videojuegos</h3>
+      <ul>
+        <li><a href="projects/moonSprings.html">Moon Springs</a></li>
+        <li><a href="projects/dhm.html">Don't Hurt Me</a></li>
+      </ul>
+      <h3>🎥Animación</h3>
+      <ul>
+        <li><a href="projects/ate.html">Las Aventuras de Timmy en el Espacio</a></li>
+        <li><a href="projects/mrPoker.html">MrPoker</a></li>
+      </ul>
+    </section>
+
+  <footer>
+    <p>Derechos reservados &copy; 2023 DuarteMV</p>
+  </footer>
+</body>
+</html>

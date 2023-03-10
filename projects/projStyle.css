@@ -67,6 +67,11 @@ img {
   height: auto;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Estilo del pie de página */
 footer {
   background-color: #2F2F2F;
