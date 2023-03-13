@@ -60,7 +60,7 @@ ul {
 	margin-left: 20px;
     margin-right: 20px;
 	padding: 30px;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 10px rgba(255, 0, 174, 0.2);
 }
 
 .section p {
@@ -82,7 +82,7 @@ ul {
 	margin-top: 50px; /* Ajusta a la altura del footer */
     margin-bottom: 50px; /* Ajusta a la altura del footer */
     max-width: 1500px;
-	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 0, 174, 0.2);
 }
 .videos h2 {
 	font-size: 36px;
