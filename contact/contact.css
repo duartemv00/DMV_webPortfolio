@@ -1,12 +1,4 @@
-main {
-    margin: 20px auto;
-    margin-bottom: 60px; /* Ajusta la altura del footer */
-    margin-top: 100px; /* Ajusta a la altura del header */
-    max-width: 800px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+
 
 a {
 	color: #333;
@@ -19,11 +11,18 @@ ul {
 	padding: 0;
 }
 
-section {
-    margin-bottom: 20px;
-}
-
 h1 {
     margin: 0;
     text-align: center;
+}
+
+.info {
+	margin: auto;
+    margin-bottom: 60px; /* Ajusta a la altura del footer */
+    margin-top: 100px; /* Ajusta a la altura del header */
+    max-width: 1000px;
+    padding: 20px;
+	color: white;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
