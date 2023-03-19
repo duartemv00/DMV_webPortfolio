@@ -1,0 +1,49 @@
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* SECCIÓN VIDEO */
+.vid {
+	background-color: #333;
+	background-size: cover;
+	padding: 100px 20px 0px;
+    margin-bottom: 50px;
+	text-align: center; /* colocar el contenido en el centro de la pantalla */
+}
+
+/* SECCION CV */
+.cv {
+	margin: auto;
+    margin-bottom: 60px; /* Ajusta a la altura del footer */
+    margin-top: 100px; /* Ajusta a la altura del header */
+    max-width: 1000px;
+    padding: 20px;
+	color: white;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.cv h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+} 
+
+.cv h3 {
+	padding-left: 40px;
+}
+
+.cv ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 100px; /* Ajusta la cantidad de indentación */
+}
+
+
