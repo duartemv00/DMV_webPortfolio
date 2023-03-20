@@ -1,0 +1,59 @@
+
+
+main {
+    margin-top: 100px;  /* Ajusta a la altura del header */
+    margin-bottom: 60px; /* Ajusta a la altura del footer */
+    color: white;
+}
+
+h1 {
+    font-size: 0px;
+    text-align: center;
+}
+
+img {
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    padding: 20px;
+	color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.trailer {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+	margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px ;
+    width: 500px;
+    padding: 20px;
+	color: white;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.section h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section li {
+    list-style: square;
+}
