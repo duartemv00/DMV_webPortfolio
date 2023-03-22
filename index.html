@@ -3,69 +3,129 @@
 <head>
 	<title>DuarteMV</title>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="resources/favicon.png"> <!-- favicon -->
+	<!-- box icons -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- custom css -->
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" type="text/css" href="style/generalStyle.css">
-	<link rel="icon" type="image/png" href="resources/favicon.png">
 </head>
+
 <body>
-	<header>
-		<div class="logo">
-			<a href="#"><img src="resources/logoDuarteMV.png" alt="DuarteMV logo"></a>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="aboutMe.html">Sobre mi</a></li>
-				<li><a href="projects.html">Proyectos</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contacto</a></li>
-			</ul>
+	<!-- HEADER -->
+	<header class= "header">
+		<a href="#intro" class="logo"><img src="resources/logoDuarteMV.png" alt="DuarteMV logo"></a>
+		<i class='bx bx-menu' id="menu-icon"></i>
+		<nav class="navbar">
+			<a href="#intro" class="active">Inicio</a></li>
+			<a href="#aboutme">Sobre mi</a></li>
+			<a href="#proyectos">Proyectos</a></li>
+			<a href="#contact">Contacto</a></li>
 		</nav>
 	</header>
 	
 	<main>
-		<section class="intro">
-			<img src="resources/mascota.png" alt="mascota">
-			<p>Creador de videojuegos y animación especializado en Unreal Engine 5.</p>
-			<a href="aboutMe.html" class="button">Conoce mas</a>
+		<!-- INTRO -->
+		<section class="intro" id="intro">
+			<div class="info">
+				<div class="info-text">				
+					<h3>¡Hola! Mi nombre es</h3>
+					<h1>Duarte 'Creates'</h1>
+					<h3>Creador de <span>Videojuegos</span> y <span>Animación</span></h3>
+					<h3>Especializado en <span>Unreal Engine 5.1	</span></h3>
+				</div>
+				<div class="rrss">
+					<a href="https://www.instagram.com/duartecreates/" target="_blank" class="instagram"><i class='bx bxl-instagram'></i></a>
+					<a href="https://twitter.com/duartecreates" target="_blank" class="twitter"><i class='bx bxl-twitter'></i></a>
+					<a href="https://www.linkedin.com/in/duartemv/" target="_blank" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+					<a href="https://www.linkedin.com/in/duartemv/" target="_blank" class="itchio"><i class='bx bxs-invader'></i></a>
+				</div>
+				<div class="info-buttons">
+					<a href="#aboutme" class="button">Conóceme mas</a>
+				</div>
+			</div>
+			<img src="resources/mascota.png" alt="mascota" class="mascota">
 		</section>
 
-		<section class="rrss">
-			<a href="https://www.instagram.com/duartecreates/" target="_blank" class="instagram"><img src="resources/instaLogo.png" alt="instaLogo"></a>
-			<a href="https://twitter.com/duartecreates" target="_blank" class="twitter"><img src="resources/twitterLogo.png" alt="twitterLogo"></a>
-			<a href="https://github.com/duartemv00" target="_blank" class="github"><img src="resources/githubLogo.png" alt="githubLogo"></a>
-			<a href="https://www.linkedin.com/in/duartemv/" target="_blank" class="linkedin"><img src="resources/linkedinLogo.png" alt="linkedinLogo"></a>
+		<!-- ABOUT ME -->
+		<section class="aboutme" id="aboutme">
+			<h2>Sobre mi</h2>
+			<video width="640" height="360" controls>
+				<source src="resources/aboutMe.mp4" type="video/mp4">
+				Tu navegador no admite el elemento <code>video</code>.
+			</video>
+			<p class="bio">He trabajado con diferentes equipos desarrollando tanto proyectos de animación como videojuegos.</p>
+			<a href="projects.html" class="button">Mi CV</a>
 		</section>
-		
-		<section class="proyectos">
-			<ul>
-				<h1>Últimos proyectos</h1>
-				<li>
+
+		<!-- PROYECTOS -->
+		<section class="proyectos" id="proyectos">
+			<h2 class="heading">Mis <span>proyectos</span></h2> <!-- Título de sección -->
+			<!-- Contenedor de TODOS los proyectos -->
+			<div class="proyectos-container">
+				<!-- Caja del proyecto: Don't Hurt Me -->
+				<div class="proyectos-box">					
+					<a href="#"><img src="resources/workInProgress.png" class = "mini" alt="Miniatura de las 'MrPoker'"></a>
+					<div class="proyectos-layer">
+						<h1>Don't Hurt Me</h1>
+						<p>Videojuego de <span>realidad virtual</span> sobre el secuestro de una niña en una casa abandonada.</p>
+					</div>
+				</div>
+				<!-- Caja del proyecto: Moon Springs -->
+				<div class="proyectos-box">	
 					<a href="moonSprings.html"><img src="resources/mini01.png" class = "mini" alt="Screenshot de 'Moon Springs'"></a>
-					<h3>Moon Springs</h3>
-					<p>"Frenético videojuego de gestión arcade de unas termas en el espacio."</p>
-				</li>
-				<li>
+					<div class="proyectos-layer">
+						<!--<h1>Moon Springs</h1>-->
+						<img src="resources/logoMoonSprings.png" class = "mini" alt="Screenshot de 'Moon Springs'">
+						<p>Frenético <span>videojuego de gestión arcade</span> de unas termas en el espacio.</p>
+					</div>
+				</div>
+				<!-- Caja del proyecto: ATE -->
+				<div class="proyectos-box">				
 					<a href="ate.html"><img src="resources/miniATE.png" class = "mini" alt="Miniatura de las 'Aventuras de Timmy en el Espacio'"></a>
-					<h3>Las Aventuras de Timmy en el Espacio</h3>
-					<p>"Las disparatadas aventuras del explorador Timmy y su fiel compañero Jeoff."</p>
-				</li>
-				<li>
+					<div class="proyectos-layer">
+						<h1>Las aventuras de Timmy en el espacio</h1>
+						<p><span>Serie de animación</span> sobre las disparatadas aventuras del explorador Timmy y su fiel compañero Jeoff.</p>
+					</div>
+				</div>
+				<!-- Caja del proyecto: Mr.Poker -->
+				<div class="proyectos-box">					
 					<a href="mrPoker.html"><img src="resources/miniPoker.PNG" class = "mini" alt="Miniatura de las 'MrPoker'"></a>
-					<h3>MrPoker</h3>
-					<p>"Un trio de juguetes apuestan sus piezas en una tensa partida de poker."</p>
-				</li>
-
-                <a href="projects.html" class="button">Ver más</a>
-			</ul>
+					<div class="proyectos-layer">
+						<h1>Mr.Poker</h1>
+						<p><span>Cortometraje de animación</span> sobre un trio de juguetes apuestan sus piezas en una tensa partida de poker.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	
-	<footer>
-		<p>&copy; 2023 DuarteMV. All rights reserved.</p>
+	<!-- CONTACTO -->
+	<section class="contact" id="contact">
+		<h2 class="heading">¡Contacta <span>conmigo!</span></h2>
+		<p>A través de mi email: <span><a href="mailto:duartemv00@gmail.com" class="button">duartemv00@gmail.com</span></p></a>
+		<p>O través de mis redes sociales:</p>
+		<div class="rrss">
+			<a href="https://www.instagram.com/duartecreates/" target="_blank" class="instagram"><i class='bx bxl-instagram'></i></a>
+			<a href="https://twitter.com/duartecreates" target="_blank" class="twitter"><i class='bx bxl-twitter'></i></a>
+			<a href="https://www.linkedin.com/in/duartemv/" target="_blank" class="linkedin"><i class='bx bxl-linkedin' ></i></a>
+		</div>
+	</section>
+
+	<!-- PIE DE PAGINA -->
+	<footer class="footer">
+		<div class="footer-text">
+			<p>&copy; 2023 DuarteMV. All rights reserved.</p>
+		</div>
+		<div class="footer-iconTop">
+			<a href="#intro"><i class='bx bx-up-arrow-alt' ></i></a>
+		</div>
 	</footer>
 	
-	<script src="scripts.js"></script>
+	<!-- custom js -->
+	<script src="js/script.js"></script>
 </body>
 </html>
