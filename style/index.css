@@ -35,84 +35,90 @@
 
 /* SECCIÓN ABOUT ME */
 .aboutme {
-	background: var(--second-bg-color);
+	min-height: 50vh;
 }
-.aboutme-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.aboutme .bio {
+	font-size: 2.5rem;
+	text-align: left;
+	line-height: 4rem;
 }
-.aboutme-info p{
-	font-size: 2rem;
+.aboutme .vid {
+	padding: 2rem;
+	text-align: left;
 }
-.aboutme-info .bio {
-	flex: 1 1 30rem;
-	background: var(--second-bg-color);
-	padding: 3rem 2rem 4rem;
-	border-radius: 2rem; /* cubos con bordes redondeados */
+.aboutme .cv-button {
+	padding: 2rem;
 	text-align: center;
-	border: .2rem solid var(--bg-color);
 }
 
 /* SECCIÓN PROYECTOS */
+.proyectos {
+	background: var(--second-bg-color);
+	min-height: 70vh;
+} 
 .proyectos h1 {
 	font-size: 3rem;
 	margin-bottom: 4rem;
 }
 .proyectos p {
-	font-size: 1.5rem;
+	padding-top: 2rem;
+	font-size: 2rem;
 	text-align: left;
 }
+.proyectos a {
+	color: var(--text-color)
+}
+
 .proyectos-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
+	display: grid; /* organizar elementos en una red */
+	grid-template-columns: repeat(3, 1fr); /* plantilla de 3 elementos por fila */
 	gap: 2.5rem; /* espacio entre elementos del container */
 }
-.proyectos-container .proyectos-box {
+.proyectos-box {
 	position: relative;
 	border-radius: 2rem;
 	box-shadow: 0 0 1rem var(--second-bg-color);
 	overflow: hidden;
 	display: flex;
+	flex-direction: column;
 	flex: 1 1 30rem;
 	background: var(--second-bg-color);
 	padding: 0 1rem;
 	text-align: center;
 	min-height: 30vh;
 }
-.proyectos-box .mini {
+.proyectos-mini img {
 	width: 100%;
 	transition: transform 0.2s ease-in-out;
+	border-radius: 2rem;
 }
-.proyectos-box:hover .mini {
-	transform: scale(1.1);
-}
-.proyectos-box .proyectos-layer{
+.proyectos-layer{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0,0,0, .1), var(--main-color));
+	background: linear-gradient(rgba(0,0,0, .1), var(--second-bg-color));
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 	text-align: center;
-	padding: 0 4rem;
-	transform: translateY(100%);
+	padding: 0 2rem;
+	transform: translateX(-110%);
 	transition: transform 0.2s ease-in-out;
 }
-.proyectos-box:hover .proyectos-layer{
-	transform: translateY(0);
+.proyectos-mini:hover img {
+	transform: scale(1.1);
 }
-
+.proyectos-mini:hover .proyectos-layer{
+	transform: translateX(0);
+}
 
 
 /* SECCIÓN CONTACT */
 .contact {
-	background: var(--second-bg-color)
+	background: var(--second-bg-color);
+	min-height: 50vh;
 }
 .contact p {
 	font-size: 2rem;

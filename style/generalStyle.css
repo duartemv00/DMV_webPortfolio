@@ -1,4 +1,7 @@
 /* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:wght@100&display=swap');
+
+
 * { /* basicos de la web */
 	margin: 0;
 	padding: 0;
@@ -32,11 +35,12 @@ section {
 h2 {
 	font-size: 3rem;
 	margin-top: 3rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 }
 span {
 	color: var(--main-color);
 }
+
 
 
 /* ENCABEZADO */
@@ -122,10 +126,8 @@ footer {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem 9%;
-
-
 	background: var(--bg-color);
-  }
+}
 .footer-text {
 	font-size: 1.6rem;
 }
