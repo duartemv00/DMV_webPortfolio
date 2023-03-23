@@ -1,6 +1,4 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Noto+Sans:wght@100&display=swap');
-
 
 * { /* basicos de la web */
 	margin: 0;
@@ -10,7 +8,7 @@
 	border: none;
 	outline: none;
 	scroll-behavior: smooth;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 :root {
 	--bg-color: #333;
