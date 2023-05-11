@@ -20,6 +20,7 @@ h1 {
 .trailer {
     padding: 10rem;
     text-align: center;
+    max-width: 100%;
 }
 
 .data {

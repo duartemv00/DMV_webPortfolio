@@ -39,8 +39,6 @@ span {
 	color: var(--main-color);
 }
 
-
-
 /* ENCABEZADO */
 .header {
 	position: fixed;
@@ -203,5 +201,16 @@ footer {
 
 	.proyectos-container {
 		grid-template-columns: repeat(2,1fr);
+	}
+	.proyectos p {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 2.5rem; 
+	}
+
+	.bio p {
+		font-size: 1.5rem;
 	}
 }

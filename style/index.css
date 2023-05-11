@@ -71,7 +71,7 @@
 
 .proyectos-container {
 	display: grid; /* organizar elementos en una red */
-	grid-template-columns: repeat(3, 1fr); /* plantilla de 3 elementos por fila */
+	grid-template-columns: repeat(1, 1fr); /* plantilla de 3 elementos por fila */
 	gap: 2.5rem; /* espacio entre elementos del container */
 }
 .proyectos-box {
@@ -86,6 +86,7 @@
 	padding: 0 1rem;
 	text-align: center;
 	min-height: 30vh;
+	max-width: 50%;
 }
 .proyectos-mini img {
 	width: 100%;
