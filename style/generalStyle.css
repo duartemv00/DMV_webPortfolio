@@ -14,8 +14,8 @@
 	--bg-color: #333;
 	--second-bg-color: #222;
 	--header-color: #111;
-	--text-color: #fff;
-	--main-color: rgb(213, 120, 214);
+	--text-color: #2ce8f4;
+	--main-color: #ffe762;
 }
 html{
 	font-size: 62.5%;
@@ -120,14 +120,14 @@ span {
 	box-shadow: 0 0 1rem var(--main-color);
 }
 
-/* PIE DE PÁGINA */
+/********** PIE DE PÁGINA **********/
 footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 2rem 9%;
-	background: var(--bg-color);
+	background: var(--second-bg-color);
 }
 .footer-text {
 	font-size: 1.6rem;
@@ -137,7 +137,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	padding: .8rem;
-	background: var(--second-bg-color);
+	background: var(--bg-color);
 	border-radius: .8rem;
 }
 .footer-iconTop a i{
